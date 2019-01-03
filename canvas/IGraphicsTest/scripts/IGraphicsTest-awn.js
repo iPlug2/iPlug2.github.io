@@ -10,12 +10,10 @@ class IGraphicsTestController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = location.origin + "/canvas/IGraphicsTest/";
-    console.log(origin);
     return new Promise( (resolve) => {
-      actx.audioWorklet.addModule(origin + "scripts/IGraphicsTest-wam.js").then(() => {
-      actx.audioWorklet.addModule(origin + "scripts/wam-processor.js").then(() => {
-      actx.audioWorklet.addModule(origin + "scripts/IGraphicsTest-awp.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IGraphicsTest/scripts/IGraphicsTest-wam.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IGraphicsTest/scripts/wam-processor.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IGraphicsTest/scripts/IGraphicsTest-awp.js").then(() => {
         resolve();
       }) }) });
     })
