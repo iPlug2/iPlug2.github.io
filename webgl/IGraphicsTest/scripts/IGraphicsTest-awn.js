@@ -10,7 +10,7 @@ class IGraphicsTestController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = location.origin + "https://iplug2.github.io/webgl/IGraphicsTest/";
+    var origin = location.origin + "/webgl/IGraphicsTest/";
     return new Promise( (resolve) => {
       actx.audioWorklet.addModule(origin + "scripts/IGraphicsTest-wam.js").then(() => {
       actx.audioWorklet.addModule(origin + "scripts/wam-processor.js").then(() => {
