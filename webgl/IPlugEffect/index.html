@@ -79,9 +79,6 @@
  -->
     <script src="scripts/audioworklet.js"></script>
     <script async src="fonts.js"></script>
-    <script async src="svgs.js"></script>
-    <script async src="imgs.js"></script>
-    <script async src="imgs@2x.js"></script>
     <script async src="scripts/IPlugEffect-web.js"></script>
   </head>
   <body>
@@ -273,7 +270,7 @@
                 if(IPlugEffect_WAM != undefined) {
 
                   //not yet working out of the box for effects
-                  if(/*IPlugEffect_WAM.numberOfInputs > 0*/ false)
+                  if(/*IPlugEffect_WAM.numberOfInputs > 0*/ true)
                   {
                     var constraints = { audio: true, video:false }
                     navigator.mediaDevices.getUserMedia(constraints)

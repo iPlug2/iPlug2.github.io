@@ -2,9 +2,10 @@ class IPlugEffectController extends WAMController
 {
   constructor (actx, options) {
     options = options || {};
-    options.numberOfInputs  = 0;
+    options.numberOfInputs  = 1;
     options.numberOfOutputs = 1;
     options.outputChannelCount = [2];
+    options.inputChannelCount = [2];
 
     super(actx, "IPlugEffect", options);
   }

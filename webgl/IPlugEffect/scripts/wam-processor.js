@@ -15,9 +15,9 @@ class WAMProcessor extends AudioWorkletProcessor
 
   constructor(options) {
     options = options || {}
-    if (options.numberOfInputs === undefined)       options.numberOfInputs = 0;
+    if (options.numberOfInputs === undefined)       options.numberOfInputs = 1;
     if (options.numberOfOutputs === undefined)      options.numberOfOutputs = 1;
-    if (options.inputChannelCount === undefined)    options.inputChannelCount  = [];
+    if (options.inputChannelCount === undefined)    options.inputChannelCount  = [2];
     if (options.outputChannelCount === undefined)   options.outputChannelCount = [2];
     if (options.inputChannelCount.length  != options.numberOfInputs)  throw new Error("InvalidArgumentException");
     if (options.outputChannelCount.length != options.numberOfOutputs) throw new Error("InvalidArgumentException");
