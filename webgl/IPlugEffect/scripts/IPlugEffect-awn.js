@@ -11,11 +11,10 @@ class IPlugEffectController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = location.origin + "/";
     return new Promise( (resolve) => {
-      actx.audioWorklet.addModule(origin + "scripts/IPlugEffect-wam.js").then(() => {
-      actx.audioWorklet.addModule(origin + "scripts/wam-processor.js").then(() => {
-      actx.audioWorklet.addModule(origin + "scripts/IPlugEffect-awp.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/webgl/IPlugEffect/scripts/IPlugEffect-wam.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/webgl/IPlugEffect/scripts/wam-processor.js").then(() => {
+      actx.audioWorklet.addModule("https://iplug2.github.io/webgl/IPlugEffect/scripts/IPlugEffect-awp.js").then(() => {
         resolve();
       }) }) });
     })
