@@ -1,6 +1,3 @@
-if(window.devicePixelRatio == 1) {
-
-
 var Module = typeof Module !== 'undefined' ? Module : {};
 
 if (!Module.expectedDataFileDownloads) {
@@ -352,6 +349,3 @@ Module['FS_createPath']('/resources', 'img', true, true);
  loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley.png"}], "remote_package_size": 5635, "package_uuid": "6ca38c69-9234-4046-ad6c-da3984bdf00f"});
 
 })();
-
-
-}
