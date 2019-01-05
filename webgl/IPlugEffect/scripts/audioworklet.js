@@ -225,7 +225,7 @@ AudioContext = window.AudioContext || window.webkitAudioContext;
           scope.audioWorklet = AWPF.audioWorklet;
         window.AudioWorkletNode = AWPF.AudioWorkletNode;
 
-        fetch("https://iplug2.github.io/webgl/IPlugEffect/scripts/audioworklet.js").then(function (resp) {
+        fetch("https://iplug2.github.io/webgl/IPlugEffect/scripts/audioworker.js").then(function (resp) {
           resp.text().then(function (s) {
             var u = window.URL.createObjectURL(new Blob([s]));
             AWPF.worker = new Worker(u);
