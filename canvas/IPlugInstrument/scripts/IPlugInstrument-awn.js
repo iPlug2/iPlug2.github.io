@@ -10,10 +10,12 @@ class IPlugInstrumentController extends WAMController
   }
 
   static importScripts (actx) {
+    var origin = "https://iplug2.github.io/CANVAS/IPlugInstrument/";
+
     return new Promise( (resolve) => {
-      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IPlugInstrument/scripts/IPlugInstrument-wam.js").then(() => {
-      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IPlugInstrument/scripts/wam-processor.js").then(() => {
-      actx.audioWorklet.addModule("https://iplug2.github.io/canvas/IPlugInstrument/scripts/IPlugInstrument-awp.js").then(() => {
+      actx.audioWorklet.addModule(origin + "scripts/IPlugInstrument-wam.js").then(() => {
+      actx.audioWorklet.addModule(origin + "scripts/wam-processor.js").then(() => {
+      actx.audioWorklet.addModule(origin + "scripts/IPlugInstrument-awp.js").then(() => {
         resolve();
       }) }) });
     })

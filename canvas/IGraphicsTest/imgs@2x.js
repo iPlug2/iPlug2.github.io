@@ -1,3 +1,4 @@
+
 var Module = typeof Module !== 'undefined' ? Module : {};
 
 if (!Module.expectedDataFileDownloads) {
@@ -346,6 +347,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}], "remote_package_size": 5635, "package_uuid": "2835fa5a-5ca0-446c-a984-0b32259ed532"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}], "remote_package_size": 5635, "package_uuid": "932e6681-1686-42a4-8778-6cd30297cf8d"});
 
 })();
+
