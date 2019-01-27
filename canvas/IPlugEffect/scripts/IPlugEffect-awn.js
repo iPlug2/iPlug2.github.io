@@ -10,7 +10,7 @@ class IPlugEffectController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = "https://iplug2.github.io/canvas";
+    var origin = "https://iplug2.github.io/canvas/IPlugEffect/";
 
     return new Promise( (resolve) => {
       actx.audioWorklet.addModule(origin + "scripts/IPlugEffect-wam.js").then(() => {
