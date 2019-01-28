@@ -10,7 +10,7 @@ class IGraphicsStressTestController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = "https://iplug2.github.io/CANVAS/IGraphicsTest/";
+    var origin = "https://iplug2.github.io/CANVAS/IGraphicsStressTest/";
 
     return new Promise( (resolve) => {
       actx.audioWorklet.addModule(origin + "scripts/IGraphicsStressTest-wam.js").then(() => {
