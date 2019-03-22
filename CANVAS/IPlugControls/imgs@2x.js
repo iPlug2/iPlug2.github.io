@@ -347,7 +347,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 542705, "filename": "/resources/img/knob@2x.png"}, {"start": 542705, "audio": 0, "end": 562553, "filename": "/resources/img/knob-rotate@2x.png"}], "remote_package_size": 562553, "package_uuid": "68ebb0c0-81d0-46b6-9207-0d1ff3b74132"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 542705, "filename": "/resources/img/knob@2x.png"}, {"start": 542705, "audio": 0, "end": 562553, "filename": "/resources/img/knob-rotate@2x.png"}], "remote_package_size": 562553, "package_uuid": "373b1a93-4a9f-4f71-b13d-1be62eebf5c1"});
 
 })();
 
