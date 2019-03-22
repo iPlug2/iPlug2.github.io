@@ -347,7 +347,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 451, "filename": "/resources/img/IKRMC_Top.png"}, {"start": 451, "audio": 0, "end": 1154, "filename": "/resources/img/IKRMC_Mask.png"}, {"start": 1154, "audio": 0, "end": 2425, "filename": "/resources/img/IKRMC_Base.png"}, {"start": 2425, "audio": 0, "end": 8060, "filename": "/resources/img/smiley.png"}], "remote_package_size": 8060, "package_uuid": "d584ebd2-86cb-4a1e-9752-52d739a3e232"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 451, "filename": "/resources/img/IKRMC_Top.png"}, {"start": 451, "audio": 0, "end": 1154, "filename": "/resources/img/IKRMC_Mask.png"}, {"start": 1154, "audio": 0, "end": 2425, "filename": "/resources/img/IKRMC_Base.png"}, {"start": 2425, "audio": 0, "end": 8060, "filename": "/resources/img/smiley.png"}], "remote_package_size": 8060, "package_uuid": "44889646-967f-4f1d-8b3e-be5b625b08d6"});
 
 })();
 
