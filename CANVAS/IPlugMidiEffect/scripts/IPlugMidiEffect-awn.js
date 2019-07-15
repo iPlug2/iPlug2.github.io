@@ -6,6 +6,11 @@ class IPlugMidiEffectController extends WAMController
     options.numberOfOutputs = 1;
     options.outputChannelCount = [2];
 
+    if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ){
+      console.log("Firefox detected: SPN buffersize = 512")
+      options.buflenSPN = 512
+    }
+
     super(actx, "IPlugMidiEffect", options);
   }
 
