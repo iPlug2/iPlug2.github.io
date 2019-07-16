@@ -1,3 +1,5 @@
+/* Declares the IPlugMidiEffect Audio Worklet Processor */
+
 class IPlugMidiEffect_AWP extends AudioWorkletGlobalScope.WAMProcessor
 {
   constructor(options) {
