@@ -1,3 +1,5 @@
+/* Declares the IPlugEffect Audio Worklet Processor */
+
 class IPlugEffect_AWP extends AudioWorkletGlobalScope.WAMProcessor
 {
   constructor(options) {
