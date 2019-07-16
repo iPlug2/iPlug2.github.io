@@ -1,3 +1,5 @@
+/* Declares the IPlugControls Audio Worklet Processor */
+
 class IPlugControls_AWP extends AudioWorkletGlobalScope.WAMProcessor
 {
   constructor(options) {
