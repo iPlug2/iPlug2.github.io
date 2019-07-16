@@ -1,3 +1,5 @@
+/* Declares the IGraphicsStressTest Audio Worklet Processor */
+
 class IGraphicsStressTest_AWP extends AudioWorkletGlobalScope.WAMProcessor
 {
   constructor(options) {
