@@ -1,3 +1,5 @@
+/* Declares the MetaParamTest Audio Worklet Processor */
+
 class MetaParamTest_AWP extends AudioWorkletGlobalScope.WAMProcessor
 {
   constructor(options) {

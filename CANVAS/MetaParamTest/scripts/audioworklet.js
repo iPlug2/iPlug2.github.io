@@ -91,8 +91,8 @@ AudioContext = window.AudioContext || window.webkitAudioContext;
     options.numberOfInputs = options.numberOfInputs || 0;
     if (options.numberOfOutputs === undefined)      options.numberOfOutputs = 1;
     if (options.outputChannelCount === undefined)   options.outputChannelCount = [1];
-    if (options.inputChannelCount === undefined)    options.inputChannelCount  = [];
-  //if (options.inputChannelCount.length  != options.numberOfInputs)  throw new Error("InvalidArgumentException");
+    if (options.processorOptions.inputChannelCount === undefined)    options.processorOptions = {inputChannelCount:[]};
+    if (options.processorOptions.inputChannelCount.length  != options.numberOfInputs)  throw new Error("InvalidArgumentException");
     if (options.outputChannelCount.length != options.numberOfOutputs) throw new Error("InvalidArgumentException");
 
     var nslices = (options.buflenSPN / options.buflenAWP) | 0;
@@ -102,7 +102,7 @@ AudioContext = window.AudioContext || window.webkitAudioContext;
       var nports = (type == "input") ? options.numberOfInputs : options.numberOfOutputs;
       if (nports > 0) {
         var nchannels = 0;
-        var channelCount = (type == "input") ? options.inputChannelCount : options.outputChannelCount;
+        var channelCount = (type == "input") ? options.processorOptions.inputChannelCount : options.outputChannelCount;
         if (channelCount.length > 0) nchannels = channelCount[0];
         if (nchannels <= 0) throw new Error("InvalidArgumentException");
         var port = new Array(nchannels);
@@ -163,7 +163,7 @@ AudioContext = window.AudioContext || window.webkitAudioContext;
 
     // -- ScriptProcessorNode -------------------------------------------------
 
-    let ninChannels  = options.inputChannelCount[0] || 0;
+    let ninChannels  = options.processorOptions.inputChannelCount[0] || 0;
     let noutChannels = options.outputChannelCount[0];
     var spn = context.createScriptProcessor(options.buflenSPN, ninChannels, noutChannels);
     this.input = spn;
