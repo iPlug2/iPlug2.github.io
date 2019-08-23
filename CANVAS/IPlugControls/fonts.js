@@ -175,6 +175,6 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 188756, "filename": "/resources/fonts/forkawesome-webfont.ttf"}, {"start": 188756, "audio": 0, "end": 334104, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 334104, "package_uuid": "40266333-9189-4ed2-a61f-4a34b02334ca"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 188756, "filename": "/resources/fonts/forkawesome-webfont.ttf"}, {"start": 188756, "audio": 0, "end": 334104, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 334104, "package_uuid": "c6dd1905-b3e6-4574-98c1-c2f03c4dafff"});
 
 })();
