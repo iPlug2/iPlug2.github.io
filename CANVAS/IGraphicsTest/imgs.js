@@ -317,8 +317,10 @@ Module['FS_createPath']('/resources', 'img', true, true);
             function(useCached, metadata) {
               Module.preloadResults[PACKAGE_NAME] = {fromCache: useCached};
               if (useCached) {
+                console.info('loading ' + PACKAGE_NAME + ' from cache');
                 fetchCachedPackage(db, PACKAGE_PATH + PACKAGE_NAME, metadata, processPackageData, preloadFallback);
               } else {
+                console.info('loading ' + PACKAGE_NAME + ' from remote');
                 fetchRemotePackage(REMOTE_PACKAGE_NAME, REMOTE_PACKAGE_SIZE,
                   function(packageData) {
                     cacheRemotePackage(db, PACKAGE_PATH + PACKAGE_NAME, packageData, {uuid:PACKAGE_UUID}, processPackageData,
@@ -345,7 +347,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley.png"}, {"start": 5635, "audio": 0, "end": 28007, "filename": "/resources/img/iplug.png"}], "remote_package_size": 28007, "package_uuid": "d5a0314a-43fb-4db9-a1f5-69ab8cfbba1f"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley.png"}, {"start": 5635, "audio": 0, "end": 28007, "filename": "/resources/img/iplug.png"}], "remote_package_size": 28007, "package_uuid": "d0f717fe-9efe-4332-a972-e5d7bd1ac9af"});
 
 })();
 
