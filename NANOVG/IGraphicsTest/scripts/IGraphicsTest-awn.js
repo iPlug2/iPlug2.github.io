@@ -23,7 +23,7 @@ class IGraphicsTestController extends WAMController
   }
 
   static importScripts (actx) {
-    var origin = "https://iplug2.github.io/CANVAS/IGraphicsTest/";
+    var origin = "https://iplug2.github.io/NANOVG/IGraphicsTest/";
 
     return new Promise( (resolve) => {
       actx.audioWorklet.addModule(origin + "scripts/IGraphicsTest-wam.js").then(() => {
