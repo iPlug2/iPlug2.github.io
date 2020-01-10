@@ -345,7 +345,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
   }
 
  }
- loadPackage({"files": [{"start": 0, "audio": 0, "end": 15622, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 15622, "audio": 0, "end": 484814, "filename": "/resources/img/knob@2x.png"}, {"start": 484814, "audio": 0, "end": 492867, "filename": "/resources/img/switch@2x.png"}, {"start": 492867, "audio": 0, "end": 602078, "filename": "/resources/img/button@2x.png"}], "remote_package_size": 602078, "package_uuid": "b3175a1a-078b-40b6-a0cf-6cf669db22f3"});
+ loadPackage({"files": [{"start": 0, "audio": 0, "end": 15622, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 15622, "audio": 0, "end": 484814, "filename": "/resources/img/knob@2x.png"}, {"start": 484814, "audio": 0, "end": 492867, "filename": "/resources/img/switch@2x.png"}, {"start": 492867, "audio": 0, "end": 602078, "filename": "/resources/img/button@2x.png"}], "remote_package_size": 602078, "package_uuid": "ba69d12b-b6b3-4f8d-b0da-cef8eef3538b"});
 
 })();
 
