@@ -175,7 +175,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 2477, "filename": "/resources/img/vector-knob.svg"}], "remote_package_size": 2477, "package_uuid": "e0a682e0-d7f1-4e9a-b180-13a3dda2d957"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 2477, "filename": "/resources/img/vector-knob.svg"}], "remote_package_size": 2477, "package_uuid": "314cb1c1-39a5-4f66-a178-12d12b7c669c"});
   
   })();
   
