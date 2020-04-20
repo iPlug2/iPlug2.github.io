@@ -131,7 +131,7 @@ onmessage = function (e) {
             var outs = [];
             for (var c = 0; c < msg.buf.length; c++)
               outs.push(outbufs[c].subarray(n, n + processor.awp.buflen));
-            processor.awp.process([], [outs], []);
+            processor.awp.process([outs] /*tmp*/, [outs], []);
             n += processor.awp.buflen;
           }
           postMessage({ buf:msg.buf, type:"process", node:processor.awp.node }, msg.buf);
