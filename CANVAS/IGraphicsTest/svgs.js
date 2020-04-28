@@ -101,6 +101,7 @@
   Module['FS_createPath']('/', 'resources', true, true);
 Module['FS_createPath']('/resources', 'img', true, true);
 
+      /** @constructor */
       function DataRequest(start, end, audio) {
         this.start = start;
         this.end = end;
@@ -175,7 +176,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 3118, "filename": "/resources/img/orbs.svg"}, {"start": 3118, "audio": 0, "end": 99837, "filename": "/resources/img/23.svg"}], "remote_package_size": 99837, "package_uuid": "8275136c-9b87-4330-ac83-ac900323e2c3"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 96719, "filename": "/resources/img/23.svg"}, {"start": 96719, "audio": 0, "end": 99837, "filename": "/resources/img/orbs.svg"}], "remote_package_size": 99837, "package_uuid": "9598e637-165d-4f9c-a522-9369605e2398"});
   
   })();
   
