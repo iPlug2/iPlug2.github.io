@@ -89,6 +89,7 @@
   Module['FS_createPath']('/', 'resources', true, true);
 Module['FS_createPath']('/resources', 'img', true, true);
 
+      /** @constructor */
       function DataRequest(start, end, audio) {
         this.start = start;
         this.end = end;
@@ -346,7 +347,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 8336, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 8336, "audio": 0, "end": 9456, "filename": "/resources/img/slider-track@2x.png"}, {"start": 9456, "audio": 0, "end": 30660, "filename": "/resources/img/font@2x.png"}, {"start": 30660, "audio": 0, "end": 139871, "filename": "/resources/img/button@2x.png"}, {"start": 139871, "audio": 0, "end": 609063, "filename": "/resources/img/knob@2x.png"}, {"start": 609063, "audio": 0, "end": 617116, "filename": "/resources/img/switch@2x.png"}, {"start": 617116, "audio": 0, "end": 632738, "filename": "/resources/img/knob-rotate@2x.png"}], "remote_package_size": 632738, "package_uuid": "3a797c01-7cdf-4120-ab14-fa357dd8b047"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 21204, "filename": "/resources/img/font@2x.png"}, {"start": 21204, "audio": 0, "end": 130415, "filename": "/resources/img/button@2x.png"}, {"start": 130415, "audio": 0, "end": 138751, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 138751, "audio": 0, "end": 146804, "filename": "/resources/img/switch@2x.png"}, {"start": 146804, "audio": 0, "end": 162426, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 162426, "audio": 0, "end": 631618, "filename": "/resources/img/knob@2x.png"}, {"start": 631618, "audio": 0, "end": 632738, "filename": "/resources/img/slider-track@2x.png"}], "remote_package_size": 632738, "package_uuid": "bb3dc5f5-f8e6-47be-a694-d390c2a82970"});
   
   })();
   
