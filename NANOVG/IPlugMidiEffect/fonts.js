@@ -101,6 +101,7 @@
   Module['FS_createPath']('/', 'resources', true, true);
 Module['FS_createPath']('/resources', 'fonts', true, true);
 
+      /** @constructor */
       function DataRequest(start, end, audio) {
         this.start = start;
         this.end = end;
@@ -175,7 +176,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "32658ad2-5e49-4965-9d38-c6629a4849d7"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "56fc4224-44e4-4a23-a566-d43505dba448"});
   
   })();
   
