@@ -30,7 +30,8 @@ AWGS.AudioWorkletGlobalScope = function () {
         postMessage({ type:"state", node:nodeID, state:"error" });
         throw new Error("InvalidStateError");
       }
-      processor.inputChannelCount = options.inputChannelCount[0];
+        processor.inputChannelCount = 0;
+//      processor.inputChannelCount = options.inputChannelCount[0];
       return processor;
     }
     else {
