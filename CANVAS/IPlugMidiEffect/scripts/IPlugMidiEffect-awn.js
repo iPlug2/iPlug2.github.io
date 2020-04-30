@@ -78,5 +78,9 @@ class IPlugMidiEffectController extends WAMController
       Module.SSMFD(parseInt(msg.prop), data.length, buffer);
       Module._free(buffer);
     }
+    else if(msg.verb == "StartIdleTimer") {
+      Module.StartIdleTimer();
+    }
+
   }
 }
