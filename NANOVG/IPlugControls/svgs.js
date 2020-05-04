@@ -176,7 +176,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 1226, "filename": "/resources/img/slider-track.svg"}, {"start": 1226, "audio": 0, "end": 3703, "filename": "/resources/img/vector-knob.svg"}, {"start": 3703, "audio": 0, "end": 4901, "filename": "/resources/img/slider-handle.svg"}], "remote_package_size": 4901, "package_uuid": "6a3efa45-6d9a-44fc-be02-a048723097cd"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 1226, "filename": "/resources/img/slider-track.svg"}, {"start": 1226, "audio": 0, "end": 3703, "filename": "/resources/img/vector-knob.svg"}, {"start": 3703, "audio": 0, "end": 4901, "filename": "/resources/img/slider-handle.svg"}], "remote_package_size": 4901, "package_uuid": "21023f94-096f-441c-b3ca-8e92b65d871a"});
   
   })();
   
