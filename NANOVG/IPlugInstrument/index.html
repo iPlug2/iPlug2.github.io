@@ -178,32 +178,8 @@
                 IPlugInstrument_WAM = new IPlugInstrumentController(actx, options);
 
                 if(IPlugInstrument_WAM !== undefined) {
-
-                  let NInputs = AWPF.isAudioWorkletPolyfilled ? IPlugInstrument_WAM.input.numberOfInputs : IPlugInstrument_WAM.numberOfInputs;
-                  
-                  if(NInputs > 0) {
-                    var constraints = { audio: true, video:false }
-                    navigator.mediaDevices.getUserMedia(constraints)
-                    .then((stream) => {
-                      let audioSource = actx.createMediaStreamSource(stream);
-
-                      // connect audioSource to WAM inputs
-                      if(AWPF.isAudioWorkletPolyfilled)
-                        audioSource.connect(IPlugInstrument_WAM.input)
-                      else
-                        audioSource.connect(IPlugInstrument_WAM);
-
-                      IPlugInstrument_WAM.connect(actx.destination); // connect WAM output to speakers
-                      connectionsDone();
-                    })
-                    .catch((err) => {
-                      console.log('Error initializing user media stream: ' + err);
-                    });
-                  }
-                  else {
                     IPlugInstrument_WAM.connect(actx.destination); // connect WAM output to speakers
                     connectionsDone();
-                  }
                 }
                 else {
                   console.log('IPlugInstrument_WAM is undefined');
