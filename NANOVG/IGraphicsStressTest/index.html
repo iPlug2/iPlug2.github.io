@@ -178,29 +178,7 @@
                 IGraphicsStressTest_WAM = new IGraphicsStressTestController(actx, options);
 
                 if(IGraphicsStressTest_WAM !== undefined) {
-
-                  let NInputs = AWPF.isAudioWorkletPolyfilled ? IGraphicsStressTest_WAM.input.numberOfInputs : IGraphicsStressTest_WAM.numberOfInputs;
-                  
-                  if(NInputs > 0) {
-                    var constraints = { audio: true, video:false }
-                    navigator.mediaDevices.getUserMedia(constraints)
-                    .then((stream) => {
-                      let audioSource = actx.createMediaStreamSource(stream);
-
-                      // connect audioSource to WAM inputs
-                      if(AWPF.isAudioWorkletPolyfilled)
-                        audioSource.connect(IGraphicsStressTest_WAM.input)
-                      else
-                        audioSource.connect(IGraphicsStressTest_WAM);
-
-                      IGraphicsStressTest_WAM.connect(actx.destination); // connect WAM output to speakers
-                      connectionsDone();
-                    })
-                    .catch((err) => {
-                      console.log('Error initializing user media stream: ' + err);
-                    });
-                  }
-                  else {
+                  {
                     IGraphicsStressTest_WAM.connect(actx.destination); // connect WAM output to speakers
                     connectionsDone();
                   }
