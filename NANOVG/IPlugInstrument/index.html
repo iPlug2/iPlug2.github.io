@@ -178,8 +178,10 @@
                 IPlugInstrument_WAM = new IPlugInstrumentController(actx, options);
 
                 if(IPlugInstrument_WAM !== undefined) {
+                  {
                     IPlugInstrument_WAM.connect(actx.destination); // connect WAM output to speakers
                     connectionsDone();
+                  }
                 }
                 else {
                   console.log('IPlugInstrument_WAM is undefined');
