@@ -176,7 +176,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 96719, "filename": "/resources/img/23.svg"}, {"start": 96719, "audio": 0, "end": 99837, "filename": "/resources/img/orbs.svg"}], "remote_package_size": 99837, "package_uuid": "94cc03a7-f615-4379-ba9d-12935e520ec0"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 96719, "filename": "/resources/img/23.svg"}, {"start": 96719, "audio": 0, "end": 99837, "filename": "/resources/img/orbs.svg"}], "remote_package_size": 99837, "package_uuid": "24e68b02-db3a-454d-a54c-a0cc0f7c50e1"});
   
   })();
   
