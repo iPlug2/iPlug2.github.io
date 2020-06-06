@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -284,7 +283,6 @@ Module['FS_createPath']('/resources', 'img', true, true);
         }
       
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -347,7 +345,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 15622, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 15622, "audio": 0, "end": 484814, "filename": "/resources/img/knob@2x.png"}, {"start": 484814, "audio": 0, "end": 485934, "filename": "/resources/img/slider-track@2x.png"}, {"start": 485934, "audio": 0, "end": 595145, "filename": "/resources/img/button@2x.png"}, {"start": 595145, "audio": 0, "end": 603198, "filename": "/resources/img/switch@2x.png"}, {"start": 603198, "audio": 0, "end": 611534, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 611534, "audio": 0, "end": 632738, "filename": "/resources/img/font@2x.png"}], "remote_package_size": 632738, "package_uuid": "a3980203-1c8d-4322-acce-8c19dab10e04"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 15622, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 15622, "audio": 0, "end": 484814, "filename": "/resources/img/knob@2x.png"}, {"start": 484814, "audio": 0, "end": 485934, "filename": "/resources/img/slider-track@2x.png"}, {"start": 485934, "audio": 0, "end": 595145, "filename": "/resources/img/button@2x.png"}, {"start": 595145, "audio": 0, "end": 603198, "filename": "/resources/img/switch@2x.png"}, {"start": 603198, "audio": 0, "end": 611534, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 611534, "audio": 0, "end": 632738, "filename": "/resources/img/font@2x.png"}], "remote_package_size": 632738, "package_uuid": "b6c20a3a-160e-48d2-a0d1-0b02b2ca61df"});
   
   })();
   

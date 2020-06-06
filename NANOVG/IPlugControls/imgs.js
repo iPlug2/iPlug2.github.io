@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -284,7 +283,6 @@ Module['FS_createPath']('/resources', 'img', true, true);
         }
       
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -347,7 +345,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 6537, "filename": "/resources/img/knob-rotate.png"}, {"start": 6537, "audio": 0, "end": 15283, "filename": "/resources/img/font.png"}, {"start": 15283, "audio": 0, "end": 45915, "filename": "/resources/img/button.png"}, {"start": 45915, "audio": 0, "end": 49107, "filename": "/resources/img/switch.png"}, {"start": 49107, "audio": 0, "end": 51637, "filename": "/resources/img/slider-track.png"}, {"start": 51637, "audio": 0, "end": 55056, "filename": "/resources/img/slider-handle.png"}, {"start": 55056, "audio": 0, "end": 124542, "filename": "/resources/img/knob.png"}], "remote_package_size": 124542, "package_uuid": "18215901-470d-48e8-845d-2c8b9ccd5cd0"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 6537, "filename": "/resources/img/knob-rotate.png"}, {"start": 6537, "audio": 0, "end": 15283, "filename": "/resources/img/font.png"}, {"start": 15283, "audio": 0, "end": 45915, "filename": "/resources/img/button.png"}, {"start": 45915, "audio": 0, "end": 49107, "filename": "/resources/img/switch.png"}, {"start": 49107, "audio": 0, "end": 51637, "filename": "/resources/img/slider-track.png"}, {"start": 51637, "audio": 0, "end": 55056, "filename": "/resources/img/slider-handle.png"}, {"start": 55056, "audio": 0, "end": 124542, "filename": "/resources/img/knob.png"}], "remote_package_size": 124542, "package_uuid": "56a4e0a7-5f09-40bf-9d83-a0169da02652"});
   
   })();
   
