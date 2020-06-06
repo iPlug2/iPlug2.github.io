@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -136,7 +135,6 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
   
     
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -176,7 +174,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "06ab790d-3f0e-49ea-860f-58eaccc865e0"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "2400eeb5-8865-4797-84b3-9b678e469e3d"});
   
   })();
   
