@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -284,7 +283,6 @@ Module['FS_createPath']('/resources', 'img', true, true);
         }
       
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -347,7 +345,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}, {"start": 5635, "audio": 0, "end": 6425, "filename": "/resources/img/src@2x.png"}, {"start": 6425, "audio": 0, "end": 7217, "filename": "/resources/img/dst@2x.png"}, {"start": 7217, "audio": 0, "end": 29589, "filename": "/resources/img/iplug@2x.png"}], "remote_package_size": 29589, "package_uuid": "2dac4a93-074c-47e5-b6af-f0a3571af303"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}, {"start": 5635, "audio": 0, "end": 6425, "filename": "/resources/img/src@2x.png"}, {"start": 6425, "audio": 0, "end": 7217, "filename": "/resources/img/dst@2x.png"}, {"start": 7217, "audio": 0, "end": 29589, "filename": "/resources/img/iplug@2x.png"}], "remote_package_size": 29589, "package_uuid": "e7fb91a7-0c17-4d7c-b218-a839ab119645"});
   
   })();
   

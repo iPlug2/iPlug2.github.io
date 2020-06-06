@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -136,7 +135,6 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
   
     
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -176,7 +174,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 263712, "filename": "/resources/fonts/Montserrat-LightItalic.ttf"}, {"start": 263712, "audio": 0, "end": 409060, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 409060, "package_uuid": "cdedf4bf-cc77-4f74-9b46-df2ef8d761be"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 263712, "filename": "/resources/fonts/Montserrat-LightItalic.ttf"}, {"start": 263712, "audio": 0, "end": 409060, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 409060, "package_uuid": "b56d36da-486c-4160-85c8-05e13b9a9d1d"});
   
   })();
   

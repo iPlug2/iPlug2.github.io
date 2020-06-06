@@ -3,7 +3,6 @@
   
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
-    Module.finishedDataFileDownloads = 0;
   }
   Module.expectedDataFileDownloads++;
   (function() {
@@ -136,7 +135,6 @@ Module['FS_createPath']('/resources', 'img', true, true);
   
     
       function processPackageData(arrayBuffer) {
-        Module.finishedDataFileDownloads++;
         assert(arrayBuffer, 'Loading data file failed.');
         assert(arrayBuffer instanceof ArrayBuffer, 'bad input to processPackageData');
         var byteArray = new Uint8Array(arrayBuffer);
@@ -176,7 +174,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 96719, "filename": "/resources/img/23.svg"}, {"start": 96719, "audio": 0, "end": 99837, "filename": "/resources/img/orbs.svg"}], "remote_package_size": 99837, "package_uuid": "8d1bcdfc-9682-4d1b-a091-92ba7867479c"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 96719, "filename": "/resources/img/23.svg"}, {"start": 96719, "audio": 0, "end": 99837, "filename": "/resources/img/orbs.svg"}], "remote_package_size": 99837, "package_uuid": "e884e968-0b23-4eab-9e4f-fc58d6a44dad"});
   
   })();
   
