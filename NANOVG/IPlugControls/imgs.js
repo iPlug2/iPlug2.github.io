@@ -345,7 +345,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 6537, "filename": "/resources/img/knob-rotate.png"}, {"start": 6537, "audio": 0, "end": 15283, "filename": "/resources/img/font.png"}, {"start": 15283, "audio": 0, "end": 45915, "filename": "/resources/img/button.png"}, {"start": 45915, "audio": 0, "end": 49107, "filename": "/resources/img/switch.png"}, {"start": 49107, "audio": 0, "end": 51637, "filename": "/resources/img/slider-track.png"}, {"start": 51637, "audio": 0, "end": 55056, "filename": "/resources/img/slider-handle.png"}, {"start": 55056, "audio": 0, "end": 124542, "filename": "/resources/img/knob.png"}], "remote_package_size": 124542, "package_uuid": "8b77f93a-4b4c-492b-a259-f1ec7db27d07"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 8746, "filename": "/resources/img/font.png"}, {"start": 8746, "audio": 0, "end": 12165, "filename": "/resources/img/slider-handle.png"}, {"start": 12165, "audio": 0, "end": 15357, "filename": "/resources/img/switch.png"}, {"start": 15357, "audio": 0, "end": 84843, "filename": "/resources/img/knob.png"}, {"start": 84843, "audio": 0, "end": 87373, "filename": "/resources/img/slider-track.png"}, {"start": 87373, "audio": 0, "end": 118005, "filename": "/resources/img/button.png"}, {"start": 118005, "audio": 0, "end": 124542, "filename": "/resources/img/knob-rotate.png"}], "remote_package_size": 124542, "package_uuid": "8c74f00c-db78-4909-8aaa-edb745b35594"});
   
   })();
   
