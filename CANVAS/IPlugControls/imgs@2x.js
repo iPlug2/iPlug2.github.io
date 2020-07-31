@@ -129,7 +129,15 @@ Module['FS_createPath']('/resources', 'img', true, true);
           }
   
     
-        var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        var indexedDB;
+        if (typeof window === 'object') {
+          indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        } else if (typeof location !== 'undefined') {
+          // worker
+          indexedDB = self.indexedDB;
+        } else {
+          throw 'using IndexedDB to cache data can only be done on a web page or in a web worker';
+        }
         var IDB_RO = "readonly";
         var IDB_RW = "readwrite";
         var DB_NAME = "/";
@@ -345,7 +353,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 8053, "filename": "/resources/img/switch@2x.png"}, {"start": 8053, "audio": 0, "end": 9173, "filename": "/resources/img/slider-track@2x.png"}, {"start": 9173, "audio": 0, "end": 17509, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 17509, "audio": 0, "end": 33131, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 33131, "audio": 0, "end": 142342, "filename": "/resources/img/button@2x.png"}, {"start": 142342, "audio": 0, "end": 163546, "filename": "/resources/img/font@2x.png"}, {"start": 163546, "audio": 0, "end": 632738, "filename": "/resources/img/knob@2x.png"}], "remote_package_size": 632738, "package_uuid": "e5598a82-d684-42bf-90c6-f4989aeaea30"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 109211, "filename": "/resources/img/button@2x.png"}, {"start": 109211, "audio": 0, "end": 117547, "filename": "/resources/img/slider-handle@2x.png"}, {"start": 117547, "audio": 0, "end": 586739, "filename": "/resources/img/knob@2x.png"}, {"start": 586739, "audio": 0, "end": 602361, "filename": "/resources/img/knob-rotate@2x.png"}, {"start": 602361, "audio": 0, "end": 610414, "filename": "/resources/img/switch@2x.png"}, {"start": 610414, "audio": 0, "end": 631618, "filename": "/resources/img/font@2x.png"}, {"start": 631618, "audio": 0, "end": 632738, "filename": "/resources/img/slider-track@2x.png"}], "remote_package_size": 632738, "package_uuid": "781d9659-676f-4e1a-9bca-59709a901719"});
   
   })();
   
