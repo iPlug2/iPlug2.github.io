@@ -129,7 +129,15 @@ Module['FS_createPath']('/resources', 'img', true, true);
           }
   
     
-        var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        var indexedDB;
+        if (typeof window === 'object') {
+          indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        } else if (typeof location !== 'undefined') {
+          // worker
+          indexedDB = self.indexedDB;
+        } else {
+          throw 'using IndexedDB to cache data can only be done on a web page or in a web worker';
+        }
         var IDB_RO = "readonly";
         var IDB_RW = "readwrite";
         var DB_NAME = "/";
@@ -345,7 +353,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}, {"start": 5635, "audio": 0, "end": 6427, "filename": "/resources/img/dst@2x.png"}, {"start": 6427, "audio": 0, "end": 28799, "filename": "/resources/img/iplug@2x.png"}, {"start": 28799, "audio": 0, "end": 29589, "filename": "/resources/img/src@2x.png"}], "remote_package_size": 29589, "package_uuid": "f9b122b7-c15f-491d-ab0c-733f1a80ae32"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 790, "filename": "/resources/img/src@2x.png"}, {"start": 790, "audio": 0, "end": 6425, "filename": "/resources/img/smiley@2x.png"}, {"start": 6425, "audio": 0, "end": 28797, "filename": "/resources/img/iplug@2x.png"}, {"start": 28797, "audio": 0, "end": 29589, "filename": "/resources/img/dst@2x.png"}], "remote_package_size": 29589, "package_uuid": "4be41249-2257-4a2c-947d-a6f167fa0afe"});
   
   })();
   
