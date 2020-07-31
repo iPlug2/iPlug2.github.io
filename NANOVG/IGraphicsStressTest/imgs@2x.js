@@ -129,7 +129,15 @@ Module['FS_createPath']('/resources', 'img', true, true);
           }
   
     
-        var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        var indexedDB;
+        if (typeof window === 'object') {
+          indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        } else if (typeof location !== 'undefined') {
+          // worker
+          indexedDB = self.indexedDB;
+        } else {
+          throw 'using IndexedDB to cache data can only be done on a web page or in a web worker';
+        }
         var IDB_RO = "readonly";
         var IDB_RW = "readwrite";
         var DB_NAME = "/";
@@ -345,7 +353,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}], "remote_package_size": 5635, "package_uuid": "61336d2a-075a-4290-be6e-c611b905fe2b"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 5635, "filename": "/resources/img/smiley@2x.png"}], "remote_package_size": 5635, "package_uuid": "6ddf9c0e-2611-45ab-b39e-6101bc1489b4"});
   
   })();
   
