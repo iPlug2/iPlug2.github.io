@@ -174,7 +174,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "e95c8372-34e2-4b03-81e7-0091aed69cb6"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 145348, "filename": "/resources/fonts/Roboto-Regular.ttf"}], "remote_package_size": 145348, "package_uuid": "5d1f2d73-0a5a-4a91-8927-f100c2a8351e"});
   
   })();
   
