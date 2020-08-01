@@ -158,7 +158,7 @@ class WAMProcessor extends AudioWorkletProcessor
       for (var c=0; c<numChannels; c++) {
         var waain = inputs[i][c];
         var wamin = this.audiobufs[0][i*numChannels+c];
-        if(waain === undefined || wamin === undefined) { return; } // exit function if inputs are not yet connected
+        if(waain === undefined || wamin === undefined) { return true; } // exit function if inputs are not yet connected
         WAM.HEAPF32.set(waain, wamin);
       }
     }
