@@ -353,7 +353,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"start": 0, "audio": 0, "end": 790, "filename": "/resources/img/src@2x.png"}, {"start": 790, "audio": 0, "end": 6425, "filename": "/resources/img/smiley@2x.png"}, {"start": 6425, "audio": 0, "end": 28797, "filename": "/resources/img/iplug@2x.png"}, {"start": 28797, "audio": 0, "end": 29589, "filename": "/resources/img/dst@2x.png"}], "remote_package_size": 29589, "package_uuid": "650d47ca-0074-4d24-8680-dc78030a795a"});
+   loadPackage({"files": [{"start": 0, "audio": 0, "end": 790, "filename": "/resources/img/src@2x.png"}, {"start": 790, "audio": 0, "end": 6425, "filename": "/resources/img/smiley@2x.png"}, {"start": 6425, "audio": 0, "end": 28797, "filename": "/resources/img/iplug@2x.png"}, {"start": 28797, "audio": 0, "end": 29589, "filename": "/resources/img/dst@2x.png"}], "remote_package_size": 29589, "package_uuid": "f6cecde4-e166-45bc-9d22-a1464653f7cc"});
   
   })();
   
