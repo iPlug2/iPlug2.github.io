@@ -174,7 +174,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/img/23.svg", "start": 0, "end": 96719, "audio": 0}], "remote_package_size": 96719, "package_uuid": "a7a0b944-3a01-4722-9e04-4fce6b5f7b12"});
+   loadPackage({"files": [{"filename": "/resources/img/23.svg", "start": 0, "end": 96719, "audio": 0}], "remote_package_size": 96719, "package_uuid": "eed47d47-dd19-4c94-9fdc-b42d1b53af05"});
   
   })();
   
