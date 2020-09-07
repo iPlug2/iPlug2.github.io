@@ -296,11 +296,8 @@ Module['FS_createPath']('/resources', 'img', true, true);
         var byteArray = new Uint8Array(arrayBuffer);
         var curr;
         
-          // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
-          // (we may be allocating before malloc is ready, during startup).
-          var ptr = Module['getMemory'](byteArray.length);
-          Module['HEAPU8'].set(byteArray, ptr);
-          DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
+          // Reuse the bytearray from the XHR as the source for file reads.
+          DataRequest.prototype.byteArray = byteArray;
     
             var files = metadata['files'];
             for (var i = 0; i < files.length; ++i) {
@@ -353,7 +350,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/img/knob@2x.png", "start": 0, "end": 469192, "audio": 0}, {"filename": "/resources/img/knob-rotate@2x.png", "start": 469192, "end": 484814, "audio": 0}, {"filename": "/resources/img/button@2x.png", "start": 484814, "end": 594025, "audio": 0}, {"filename": "/resources/img/font@2x.png", "start": 594025, "end": 615229, "audio": 0}, {"filename": "/resources/img/slider-handle@2x.png", "start": 615229, "end": 623565, "audio": 0}, {"filename": "/resources/img/switch@2x.png", "start": 623565, "end": 631618, "audio": 0}, {"filename": "/resources/img/slider-track@2x.png", "start": 631618, "end": 632738, "audio": 0}], "remote_package_size": 632738, "package_uuid": "8f9a18ce-fcb3-42d5-895b-af6ffecb3efa"});
+   loadPackage({"files": [{"filename": "/resources/img/knob@2x.png", "start": 0, "end": 469192, "audio": 0}, {"filename": "/resources/img/knob-rotate@2x.png", "start": 469192, "end": 484814, "audio": 0}, {"filename": "/resources/img/button@2x.png", "start": 484814, "end": 594025, "audio": 0}, {"filename": "/resources/img/font@2x.png", "start": 594025, "end": 615229, "audio": 0}, {"filename": "/resources/img/slider-handle@2x.png", "start": 615229, "end": 623565, "audio": 0}, {"filename": "/resources/img/switch@2x.png", "start": 623565, "end": 631618, "audio": 0}, {"filename": "/resources/img/slider-track@2x.png", "start": 631618, "end": 632738, "audio": 0}], "remote_package_size": 632738, "package_uuid": "1d06ce34-22d6-4152-a870-47f0b5627a90"});
   
   })();
   
