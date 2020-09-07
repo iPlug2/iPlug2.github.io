@@ -140,11 +140,8 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
         var byteArray = new Uint8Array(arrayBuffer);
         var curr;
         
-          // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
-          // (we may be allocating before malloc is ready, during startup).
-          var ptr = Module['getMemory'](byteArray.length);
-          Module['HEAPU8'].set(byteArray, ptr);
-          DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
+          // Reuse the bytearray from the XHR as the source for file reads.
+          DataRequest.prototype.byteArray = byteArray;
     
             var files = metadata['files'];
             for (var i = 0; i < files.length; ++i) {
@@ -174,7 +171,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}], "remote_package_size": 145348, "package_uuid": "7d01c8d5-f3a4-4563-a14c-63f5883717c9"});
+   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}], "remote_package_size": 145348, "package_uuid": "ad704e05-2253-44f4-9a21-17476d1076b3"});
   
   })();
   
