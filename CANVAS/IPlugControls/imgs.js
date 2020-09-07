@@ -296,11 +296,8 @@ Module['FS_createPath']('/resources', 'img', true, true);
         var byteArray = new Uint8Array(arrayBuffer);
         var curr;
         
-          // copy the entire loaded file into a spot in the heap. Files will refer to slices in that. They cannot be freed though
-          // (we may be allocating before malloc is ready, during startup).
-          var ptr = Module['getMemory'](byteArray.length);
-          Module['HEAPU8'].set(byteArray, ptr);
-          DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
+          // Reuse the bytearray from the XHR as the source for file reads.
+          DataRequest.prototype.byteArray = byteArray;
     
             var files = metadata['files'];
             for (var i = 0; i < files.length; ++i) {
@@ -353,7 +350,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/img/slider-handle.png", "start": 0, "end": 3419, "audio": 0}, {"filename": "/resources/img/font.png", "start": 3419, "end": 12165, "audio": 0}, {"filename": "/resources/img/button.png", "start": 12165, "end": 42797, "audio": 0}, {"filename": "/resources/img/switch.png", "start": 42797, "end": 45989, "audio": 0}, {"filename": "/resources/img/slider-track.png", "start": 45989, "end": 48519, "audio": 0}, {"filename": "/resources/img/knob.png", "start": 48519, "end": 118005, "audio": 0}, {"filename": "/resources/img/knob-rotate.png", "start": 118005, "end": 124542, "audio": 0}], "remote_package_size": 124542, "package_uuid": "a27d37fa-58ee-4d86-a66d-976f3b96b375"});
+   loadPackage({"files": [{"filename": "/resources/img/slider-handle.png", "start": 0, "end": 3419, "audio": 0}, {"filename": "/resources/img/font.png", "start": 3419, "end": 12165, "audio": 0}, {"filename": "/resources/img/button.png", "start": 12165, "end": 42797, "audio": 0}, {"filename": "/resources/img/switch.png", "start": 42797, "end": 45989, "audio": 0}, {"filename": "/resources/img/slider-track.png", "start": 45989, "end": 48519, "audio": 0}, {"filename": "/resources/img/knob.png", "start": 48519, "end": 118005, "audio": 0}, {"filename": "/resources/img/knob-rotate.png", "start": 118005, "end": 124542, "audio": 0}], "remote_package_size": 124542, "package_uuid": "38bc442b-e51f-4e8e-838e-b8ff463f4b2f"});
   
   })();
   
