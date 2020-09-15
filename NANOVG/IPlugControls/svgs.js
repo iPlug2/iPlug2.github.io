@@ -171,7 +171,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/img/vector-knob.svg", "start": 0, "end": 2477, "audio": 0}, {"filename": "/resources/img/hslider-track.svg", "start": 2477, "end": 2597, "audio": 0}, {"filename": "/resources/img/slider-track.svg", "start": 2597, "end": 3823, "audio": 0}, {"filename": "/resources/img/slider-handle.svg", "start": 3823, "end": 5021, "audio": 0}, {"filename": "/resources/img/hslider-handle.svg", "start": 5021, "end": 5227, "audio": 0}], "remote_package_size": 5227, "package_uuid": "e2bda9e1-c23c-4b85-8cf8-cabeba45d46f"});
+   loadPackage({"files": [{"filename": "/resources/img/slider-track.svg", "start": 0, "end": 1226, "audio": 0}, {"filename": "/resources/img/hslider-track.svg", "start": 1226, "end": 1346, "audio": 0}, {"filename": "/resources/img/slider-handle.svg", "start": 1346, "end": 2544, "audio": 0}, {"filename": "/resources/img/hslider-handle.svg", "start": 2544, "end": 2750, "audio": 0}, {"filename": "/resources/img/vector-knob.svg", "start": 2750, "end": 5227, "audio": 0}], "remote_package_size": 5227, "package_uuid": "f60aa4d7-50bb-412c-82c2-9792d868b1f4"});
   
   })();
   
