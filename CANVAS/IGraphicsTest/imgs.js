@@ -350,7 +350,7 @@ Module['FS_createPath']('/resources', 'img', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/img/dst.png", "start": 0, "end": 1314, "audio": 0}, {"filename": "/resources/img/smiley.png", "start": 1314, "end": 6949, "audio": 0}, {"filename": "/resources/img/src.png", "start": 6949, "end": 8395, "audio": 0}, {"filename": "/resources/img/iplug.png", "start": 8395, "end": 30767, "audio": 0}], "remote_package_size": 30767, "package_uuid": "16c30967-1713-432f-95eb-f8029158cb38"});
+   loadPackage({"files": [{"filename": "/resources/img/smiley.png", "start": 0, "end": 5635, "audio": 0}, {"filename": "/resources/img/src.png", "start": 5635, "end": 7081, "audio": 0}, {"filename": "/resources/img/dst.png", "start": 7081, "end": 8395, "audio": 0}, {"filename": "/resources/img/iplug.png", "start": 8395, "end": 30767, "audio": 0}], "remote_package_size": 30767, "package_uuid": "e710b3bf-1eaf-46e8-af6b-c71d7346fffb"});
   
   })();
   

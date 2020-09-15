@@ -171,7 +171,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}, {"filename": "/resources/fonts/Montserrat-LightItalic.ttf", "start": 145348, "end": 409060, "audio": 0}], "remote_package_size": 409060, "package_uuid": "761571d1-3d77-4d17-9ac3-0abe397ddf2a"});
+   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}, {"filename": "/resources/fonts/Montserrat-LightItalic.ttf", "start": 145348, "end": 409060, "audio": 0}], "remote_package_size": 409060, "package_uuid": "2923d967-9412-4f84-995e-de2d812fa563"});
   
   })();
   
