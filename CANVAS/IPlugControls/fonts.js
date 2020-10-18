@@ -171,7 +171,7 @@ Module['FS_createPath']('/resources', 'fonts', true, true);
     }
   
    }
-   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}, {"filename": "/resources/fonts/fontaudio.ttf", "start": 145348, "end": 182296, "audio": 0}, {"filename": "/resources/fonts/forkawesome-webfont.ttf", "start": 182296, "end": 371052, "audio": 0}], "remote_package_size": 371052, "package_uuid": "81548961-126a-4f3a-9793-1ba44acd626c"});
+   loadPackage({"files": [{"filename": "/resources/fonts/Roboto-Regular.ttf", "start": 0, "end": 145348, "audio": 0}, {"filename": "/resources/fonts/fontaudio.ttf", "start": 145348, "end": 182296, "audio": 0}, {"filename": "/resources/fonts/forkawesome-webfont.ttf", "start": 182296, "end": 371052, "audio": 0}], "remote_package_size": 371052, "package_uuid": "81082469-4593-4559-89e3-b8c7c0270284"});
   
   })();
   
